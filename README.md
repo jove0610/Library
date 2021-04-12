@@ -10,4 +10,4 @@ _The list of books are stored in the browser's local storage._
 
 <br />
 
-[Click Here to view live preview](#)
+[Click Here to view live preview](https://jove0610.github.io/Library/)
