@@ -106,6 +106,31 @@ UI.prototype.clearAll = function clearAll() {
     `;
 };
 
+const UI = (() => {
+  const addBookBtn = document.querySelector('[data-addBookBtn]');
+  const clearBtn = document.querySelector('[data-clearBtn]');
+  const cancelBtn = document.querySelector('[data-cancelBtn]');
+
+  const form = document.querySelector('[data-form]');
+  const modal = document.querySelector('[data-modal]');
+  const overlay = document.querySelector('[data-overlay]');
+  const bookList = document.querySelector('[data-bookList]');
+
+  const titleInput = document.querySelector('[data-titleInput]');
+  const authorInput = document.querySelector('[data-authorInput]');
+  const radioDone = document.querySelector('[data-radioDone]');
+  const radioProgress = document.querySelector('[data-radioProgress]');
+  const radioNull = document.querySelector('[data-radioNull]');
+}
+
+  const openModal = () => {
+    this.modal.classList.remove('active');
+    this.overlay.classList.remove('active');
+  }
+})
+
+
+
 function Book(title, author, status, btnClass) {
   this.title = title;
   this.author = author;
